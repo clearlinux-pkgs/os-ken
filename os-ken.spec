@@ -4,7 +4,7 @@
 #
 Name     : os-ken
 Version  : 0.3.1
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/78/2c/96dd2a7df28af4bc18c3fe8505ab3e198c82eba5360bdb591d1e5c0a7056/os-ken-0.3.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/78/2c/96dd2a7df28af4bc18c3fe8505ab3e198c82eba5360bdb591d1e5c0a7056/os-ken-0.3.1.tar.gz
 Summary  : A component-based software defined networking framework for OpenStack.
@@ -15,15 +15,12 @@ Requires: os-ken-license = %{version}-%{release}
 Requires: os-ken-python = %{version}-%{release}
 Requires: os-ken-python3 = %{version}-%{release}
 Requires: Routes
-Requires: Sphinx
 Requires: eventlet
 Requires: msgpack
 Requires: netaddr
-Requires: openstackdocstheme
 Requires: oslo.config
 Requires: ovs
 Requires: pbr
-Requires: reno
 Requires: six
 Requires: tinyrpc
 BuildRequires : buildreq-distutils3
@@ -78,7 +75,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1546530871
+export SOURCE_DATE_EPOCH=1551035319
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
