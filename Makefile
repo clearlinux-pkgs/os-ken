@@ -1,5 +1,5 @@
 PKG_NAME := os-ken
-URL = https://files.pythonhosted.org/packages/78/2c/96dd2a7df28af4bc18c3fe8505ab3e198c82eba5360bdb591d1e5c0a7056/os-ken-0.3.1.tar.gz
+URL = https://files.pythonhosted.org/packages/1a/3f/abb3cb0453c93b7be7ec29da64594214eb56c0d5ba9575aeea3451694069/os-ken-0.4.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
