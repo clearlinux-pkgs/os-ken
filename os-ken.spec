@@ -4,7 +4,7 @@
 #
 Name     : os-ken
 Version  : 0.4.0
-Release  : 4
+Release  : 5
 URL      : https://files.pythonhosted.org/packages/1a/3f/abb3cb0453c93b7be7ec29da64594214eb56c0d5ba9575aeea3451694069/os-ken-0.4.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/1a/3f/abb3cb0453c93b7be7ec29da64594214eb56c0d5ba9575aeea3451694069/os-ken-0.4.0.tar.gz
 Summary  : A component-based software defined networking framework for OpenStack.
