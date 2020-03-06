@@ -4,7 +4,7 @@
 #
 Name     : os-ken
 Version  : 1.0.0
-Release  : 10
+Release  : 11
 URL      : https://files.pythonhosted.org/packages/fc/62/c27db771f954cd44084aecbea28fb0580399eb2b03a5a7a1bbf3ac007b88/os-ken-1.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/fc/62/c27db771f954cd44084aecbea28fb0580399eb2b03a5a7a1bbf3ac007b88/os-ken-1.0.0.tar.gz
 Summary  : A component-based software defined networking framework for OpenStack.
@@ -35,19 +35,12 @@ BuildRequires : six
 BuildRequires : tinyrpc
 
 %description
-======
 os-ken
-======
-
-A component-based software defined networking framework in OpenStack.
-
-This is a fork of the Ryu library tailored for OpenStack Neutron.
-
-* License: Apache License, Version 2.0
-* Documentation: https://docs.openstack.org/os-ken/latest/
-* Source: https://git.openstack.org/cgit/openstack/os-ken
-* Bugs: https://bugs.launchpad.net/os-ken
-* Release Notes: https://docs.openstack.org/releasenotes/os-ken
+        ======
+        
+        A component-based software defined networking framework in OpenStack.
+        
+        This is a fork of the Ryu library tailored for OpenStack Neutron.
 
 %package bin
 Summary: bin components for the os-ken package.
@@ -79,7 +72,17 @@ python components for the os-ken package.
 Summary: python3 components for the os-ken package.
 Group: Default
 Requires: python3-core
-Provides: pypi(os-ken)
+Provides: pypi(os_ken)
+Requires: pypi(eventlet)
+Requires: pypi(msgpack)
+Requires: pypi(netaddr)
+Requires: pypi(oslo.config)
+Requires: pypi(ovs)
+Requires: pypi(pbr)
+Requires: pypi(routes)
+Requires: pypi(six)
+Requires: pypi(tinyrpc)
+Requires: pypi(webob)
 
 %description python3
 python3 components for the os-ken package.
@@ -94,8 +97,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583193696
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583538323
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
